@@ -1,0 +1,43 @@
+/* Light theme (default) */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Dark theme */
+.app.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.app.dark main {
+  background-color: #2d2d2d;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.app.dark footer {
+  background-color: #111;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
